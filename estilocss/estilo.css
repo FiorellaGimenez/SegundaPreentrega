@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300;400;700 & display=swap');
+
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+;
+}
+
+header{
+    background-color: #000103;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+    .logoimg{
+        font-size: 70px;
+    width: 60px;
+    height: 60px;
+    background-position: left top;
+    }
+    .titulo{
+        text-align: left;
+        color:#FFFFFA;
+        height: 20px;
+        list-style-type:none;
+    padding-block: 40px;
+    text-align: center;
+    }
+
+.menu{
+    list-style-type:none;
+    background-color:#000103;
+    padding-block: 30px;
+    text-align: center;
+    display:flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.menu__item{
+    display: inline-block;
+      margin-inline: 20px;
+      text-align: center;
+      list-style-type:none;
+      ;
+}
+
+
+
+.banda__titulo{
+    height:1000px;
+    background-color:#FFFFFA;
+    background-image:url(./../imagenes/bandadc.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.banda__titulo h2 {
+    color: #FFFFFA;
+
+}
+    
+
+ .biografia{
+    height:1000px;
+    background-color:#FFFFFA;
+    background-image:url(./../imagenes/bandadc.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ }
+
+ .formulariocentro{
+    text-align: center;
+ }
+ .biografiatexto {
+    color: #FFFFFA;
+    background-color:#3233356c;
+    padding-inline: 15px;
+    flex-direction: column;
+ }
+
+.contacto{
+    height:1000px;
+    background-color:#FFFFFA;
+    color: #FFFFFA;
+    background-image: url(./../imagenes/bandadc.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.discografia{
+    height:1000px;
+    color: #FFFFFA;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(./../imagenes/bandadc.jpg)
+}
+
+
+
+
+
+.contenedor{
+    display: grid;
+    border: 2px solid #00010300;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+     "caja1 caja2"
+     "caja3 caja4";
+     row-gap: 60px ;
+     column-gap:10px ;
+}
+
+.contenedor> div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1{
+grid-area: caja1;
+background-color: #00010300;
+}
+.caja2 {
+grid-area: caja2;
+background-color: #00010300;
+}
+
+.caja3{
+grid-area: caja3;
+background-color: #00010300;
+}
+
+.caja4{
+grid-area: caja4;
+background-color: #00010300;
+}
+
+
+    .tamanoima{
+    width: 400px;
+    height: 400px;
+    margin: 0 5px;
+    }
+
+
+    .link{
+        color: #FFFFFA;
+    }
+
+    @media screen and (max-width: 768px) {
+        .contenedor{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+         "caja1" "caja2"
+         "caja3" "caja4";
+    
+        }
+    }
+        
+@media screen and (max-width: 480px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+         "caja1"
+          "caja2"
+         "caja3"
+          "caja4";
+        
+    }
+}
