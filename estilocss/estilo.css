@@ -165,6 +165,99 @@ background-color: #00010300;
         color: #FFFFFA;
     }
 
+    .footer-bgd {
+        background-color:#000103;
+        color: #FFFFFA;
+      }
+      
+      body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .navbar-footer {
+        background-color: #000103;
+        overflow: hidden;
+      }
+      
+      .navbar-footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      .navbar-footer li {
+        float: left;
+      }
+      
+      .navbar-footer a {
+        margin: 8px;
+        display: block;
+        border-radius: 2rem;
+        color: #FFFFFA;
+        text-align: center;
+        padding: 2px 16px;
+        text-decoration: none;
+      }
+      
+      .navbar-footer a:hover {
+        background-color: #FFFFFA;
+        color: #000103;
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: center;
+        background-color: #000103;
+      }
+      
+      .copyright-bottom {
+        text-align: center;
+        padding-bottom: 5px;
+        padding-top: 6px;
+        margin-bottom: 0rem;
+        font-size: 15px;
+      }
+      
+      .volver {
+        text-align: center;
+        font-weight: bolder;
+        padding: 3px;
+        font-size: 12px;
+        bottom: 10px;
+        right: 10px;
+        position: fixed;
+        cursor: pointer;
+        margin-bottom: 0.5cm;
+        margin-right: 0.5cm;
+        color: #FFFFFA;
+        background-color: #000103;
+        border-radius: 1cm;
+        border: 2px solid #000103;
+        width: auto;
+        font-family: "'Roboto', sans-serif";
+        text-decoration: none;
+        outline: none;
+      }
+      
+      .volver:hover {
+        background-color: #000103;
+        color: #FFFFFA;
+        font-weight: bolder;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      a:hover {
+        background-color: #000103;
+        color: #FFFFFA;
+        font-weight: bolder;
+      }
+      
+
     @media screen and (max-width: 768px) {
         .contenedor{
     grid-template-columns:1fr 1fr;
