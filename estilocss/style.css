@@ -7,20 +7,7 @@ font-family: 'Roboto', sans-serif;
 ;
 }
 
-header{
-    background-color: #000103;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    grid-gap: 20px;
-}
 
-    .logoimg{
-        font-size: 70px;
-    width: 60px;
-    height: 60px;
-    background-position: left top;
-    }
     .titulo{
         text-align: left;
         color:#FFFFFA;
@@ -30,30 +17,26 @@ header{
     text-align: center;
     }
 
-.menu{
-    list-style-type:none;
-    background-color:#000103;
-    padding-block: 30px;
-    text-align: center;
-    display:flex;
-    gap: 20px;
-    grid-gap: 20px;
-}
-
-.menu__item{
-    display: inline-block;
-      margin-inline: 20px;
-      text-align: center;
+    .menu{
       list-style-type:none;
-      ;
-}
-
-
+      background-color:#000103;
+      padding-block: 30px;
+      text-align: center;
+      display:flex;
+      gap: 20px;
+      grid-gap: 20px;
+  }
+  
+  .menu__item{
+      display: inline-block;
+        margin-inline: 20px;
+        text-align: center;
+        list-style-type:none;
+        ;}
 
 .banda__titulo{
     height:1000px;
     background-color:#FFFFFA;
-    background-image:url(./../imagenes/bandadc.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
